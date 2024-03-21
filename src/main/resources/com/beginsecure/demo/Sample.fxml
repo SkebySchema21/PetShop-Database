@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packWork.HelloController">
+  <tabs>
+    <Tab text="Animale">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="Animale_table" layoutX="30.0" layoutY="35.0" prefHeight="277.0" prefWidth="529.0">
+                    <columns>
+                      <TableColumn fx:id="Animal_ID_tbl" prefWidth="75.0" text="Animal_ID" />
+                      <TableColumn fx:id="Animal_Data_nastere_tbl" prefWidth="88.00003051757812" text="Data_nastere" />
+                        <TableColumn fx:id="Animal_Pret_tbl" prefWidth="66.00006103515625" text="Pret" />
+                        <TableColumn fx:id="Animal_Sex_tbl" prefWidth="66.0" text="Sex" />
+                        <TableColumn fx:id="Animal_Denumire_latina_tbl" prefWidth="134.0" text="Denumire_latina" />
+                        <TableColumn fx:id="Animal_Familie_tbl" prefWidth="88.00003051757812" text="Familie" />
+                    </columns>
+                  </TableView>
+                  <ScrollBar fx:id="Animale_vscroll" layoutX="559.0" layoutY="35.0" orientation="VERTICAL" prefHeight="277.0" prefWidth="15.0" />
+                  <ScrollBar fx:id="Animale_hscroll" layoutX="30.0" layoutY="312.0" prefHeight="15.0" prefWidth="529.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Hrana">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="Hrana_table" layoutX="25.0" layoutY="22.0" prefHeight="200.0" prefWidth="542.0">
+                    <columns>
+                      <TableColumn fx:id="Hrana_ID_tbl" prefWidth="75.0" text="Hrana_ID" />
+                      <TableColumn fx:id="Hrana_Data_expirare_tbl" prefWidth="85.33334350585938" text="Data_expirare" />
+                        <TableColumn fx:id="Hrana_Pret_tbl" prefWidth="85.33334350585938" text="Pret" />
+                        <TableColumn fx:id="Hrana_Gramaj_tbl" prefWidth="85.33334350585938" text="Gramaj" />
+                        <TableColumn fx:id="Hrana_Cod_bare_tbl" prefWidth="85.33334350585938" text="Cod_bare" />
+                    </columns>
+                  </TableView>
+                  <ScrollBar fx:id="Hrana_vscroll" layoutX="567.0" layoutY="22.0" orientation="VERTICAL" prefHeight="199.0" prefWidth="15.0" />
+                  <ScrollBar fx:id="Hrana_hscroll" layoutX="25.0" layoutY="222.0" prefHeight="15.0" prefWidth="541.0" />
+                  <Separator layoutX="25.0" layoutY="251.0" prefHeight="4.0" prefWidth="551.0" />
+                  <Button fx:id="Hrana_Update" layoutX="25.0" layoutY="293.0" mnemonicParsing="false" text="Update" />
+                  <Button fx:id="Hrana_Insert" layoutX="96.0" layoutY="293.0" mnemonicParsing="false" text="Insert" />
+                  <Button fx:id="Hrana_Delete" layoutX="166.0" layoutY="293.0" mnemonicParsing="false" text="Delete" />
+                  <Button fx:id="Hrana_Search" layoutX="371.0" layoutY="293.0" mnemonicParsing="false" text="Search" />
+                  <Label fx:id="Hrana_label" layoutX="397.0" layoutY="264.0" text="Cautare hrana dupa cod de bare" />
+                  <TextField fx:id="Search_box" layoutX="425.0" layoutY="293.0" />
+                  <TextArea fx:id="Hrana_txt" layoutX="238.0" layoutY="256.0" prefHeight="99.0" prefWidth="115.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Facturi">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="Facturi_table" layoutX="28.0" layoutY="29.0" prefHeight="277.0" prefWidth="529.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="C1" />
+                        <TableColumn prefWidth="75.0" text="C2" />
+                     </columns>
+                  </TableView>
+                  <ScrollBar fx:id="Facturi_hscroll" layoutX="28.0" layoutY="306.0" prefHeight="15.0" prefWidth="529.0" />
+                  <ScrollBar fx:id="Facturi_vscroll" layoutX="557.0" layoutY="29.0" orientation="VERTICAL" prefHeight="277.0" prefWidth="15.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Magazine">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="Magazine_table" layoutX="25.0" layoutY="22.0" prefHeight="200.0" prefWidth="542.0">
+                     <columns>
+                        <TableColumn fx:id="Magazine_ID_tbl" prefWidth="75.0" text="Magazin_ID" />
+                        <TableColumn fx:id="Magazine_Judet_tbl" prefWidth="75.0" text="Judet" />
+                        <TableColumn fx:id="Magazine_Oras_tbl" prefWidth="75.0" text="Oras" />
+                        <TableColumn fx:id="Magazine_Strada_tbl" prefWidth="75.0" text="Strada" />
+                        <TableColumn fx:id="Magazine_Numar_tbl" prefWidth="64.0" text="Numar" />
+                        <TableColumn fx:id="Magazine_Data_deschidere_tbl" prefWidth="107.33331298828125" text="Data_deschidere" />
+                        <TableColumn fx:id="Magazine_Chirie_luna_tbl" prefWidth="68.66668701171875" text="Chirie_luna" />
+                     </columns>
+                  </TableView>
+                  <ScrollBar fx:id="Magazine_vscroll" layoutX="567.0" layoutY="22.0" orientation="VERTICAL" prefHeight="199.0" prefWidth="15.0" />
+                  <ScrollBar fx:id="Magazine_hscroll" layoutX="25.0" layoutY="222.0" prefHeight="15.0" prefWidth="541.0" />
+                  <Separator layoutX="25.0" layoutY="251.0" prefHeight="4.0" prefWidth="551.0" />
+                  <Button fx:id="Magazine_Update" layoutX="25.0" layoutY="293.0" mnemonicParsing="false" text="Update" />
+                  <Button fx:id="Magazine_Insert" layoutX="96.0" layoutY="293.0" mnemonicParsing="false" text="Insert" />
+                  <Button fx:id="Magazine_Delete" layoutX="166.0" layoutY="293.0" mnemonicParsing="false" text="Delete" />
+                  <Button fx:id="Magazine_Search" layoutX="371.0" layoutY="293.0" mnemonicParsing="false" text="Search" />
+                  <Label fx:id="Magazine_label" layoutX="397.0" layoutY="264.0" prefHeight="17.0" prefWidth="139.0" text="Cautare magazin dupa id" />
+                  <TextField fx:id="Search_box1" layoutX="425.0" layoutY="293.0" />
+                  <TextArea fx:id="Magazine_txt" layoutX="238.0" layoutY="256.0" prefHeight="99.0" prefWidth="115.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Statistici">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="Statistici_txt1" layoutX="34.0" layoutY="42.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt11" layoutX="34.0" layoutY="122.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt12" layoutX="34.0" layoutY="213.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt13" layoutX="34.0" layoutY="301.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt14" layoutX="181.0" layoutY="42.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt15" layoutX="181.0" layoutY="122.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt16" layoutX="181.0" layoutY="213.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt17" layoutX="181.0" layoutY="301.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt18" layoutX="323.0" layoutY="42.0" prefHeight="209.0" prefWidth="251.0" promptText="Insert" />
+                  <Label layoutX="34.0" layoutY="14.0" text="Profit maxim net" />
+                  <Label layoutX="34.0" layoutY="91.0" text="Nr. Max. Facturi" />
+                  <Label layoutX="34.0" layoutY="181.0" text="Cea mai mare factura" />
+                  <Label layoutX="34.0" layoutY="271.0" text="Sum total hrana" />
+                  <Label layoutX="181.0" layoutY="14.0" text="Specii care nu sunt in depozit" />
+                  <Label layoutX="181.0" layoutY="91.0" text="Care expira prima" />
+                  <Label layoutX="181.0" layoutY="181.0" text="Cel mai tanar" />
+                  <Label layoutX="181.0" layoutY="271.0" text="Max. items" />
+                  <Label layoutX="363.0" layoutY="14.0" prefHeight="17.0" prefWidth="97.0" text="Alte instructiuni" />
+                  <Button fx:id="Send" layoutX="449.0" layoutY="10.0" mnemonicParsing="false" text="Interogare" />
+                  <Button fx:id="Send1" layoutX="525.0" layoutY="10.0" mnemonicParsing="false" text="Update" />
+                  <TextArea fx:id="Statistici_txt19" layoutX="323.0" layoutY="301.0" prefHeight="39.0" prefWidth="99.0" />
+                  <TextArea fx:id="Statistici_txt20" layoutX="470.0" layoutY="301.0" prefHeight="39.0" prefWidth="99.0" />
+                  <Label layoutX="321.0" layoutY="271.0" text="TotalCantitate" />
+                  <Label layoutX="470.0" layoutY="271.0" text="SumAnimale" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
